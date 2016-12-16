@@ -40,8 +40,9 @@ h3 {
         color: #003d71
     }
     p {
-        font-size: .9em;
-        color: #375671;
+        font-size: 1em;
+        color: #254e71;
+        width: 80%;
     }
     ul {
         list-style-type: none;
@@ -52,8 +53,26 @@ h3 {
     a, a:visited {   
         color: #003d71;
     }
-/* CSS style rules go here! */   
-
+.project {
+    width: 80%;
+    min-width: 800px;
+    height: 100%;
+    margin: 35px auto;
+}
+.project:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.project-image {
+    width: 388px;
+    height: 240px;
+    background: white;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid #dddddd;
+}
+   
 </style>
 </head>
 
@@ -62,7 +81,7 @@ h3 {
     <h1>MAP672: Programming for Web Mapping</h1>
     <h2>Web Cartography at the University of Kentucky</h2>
 
-    <p>Hello World! I’m going to be a portfolio page.</p>
+    <p>Portfolio of mapping projects created using various tools, applications, and software programs</p>
 </header>
     
     <section class = "project">
@@ -76,25 +95,25 @@ h3 {
     </ul>
 </section>
     
-    <section>
-    <a target = '_blank' href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map"><img src="images/NationalParks.PNG" alt="US National Parks"/></a>
+    <section class = "project">
+    <a target = '_blank' href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map"><img src="images/NationalParks2.PNG" alt="US National Parks"/></a>
     <h3><a target = '_blank' href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map">National Parks by Area per Visitor in 2015</a></h3>
     <p></p>
     <p></p>
     <ul>
         <li>Find your Park today by: <a href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map">Avoiding the Crowds</a></li>
-        <li>Data Source: <a href=""></a></li>
+        <li>Data Source:<a href="https://irma.nps.gov/Portal/"> The Integrated Resource Management Applications (IRMA)</a></li>
     </ul>
 </section>
     
-    <section>
-    <a target = '_blank' href="#"><img src="images/" alt=""/></a>
-    <h3></h3>
-    <p></p>
+    <section class = "project">
+    <a target = '_blank' href="#"><img src="images/PowerPlants2.PNG" alt="Power Plants Proportional Symbol Map"/></a>
+    <h3><a target = '_blank' href="#">Power Plants Proportional Symbol Map</a></h3>
+    <p>This map was created using Javascript code and language as well as utilizing the <a href="http://leafletjs.com/reference-1.0.2.html">Leaflet Javascript Library API</a> to customize our tools and data to create an informative and dynamic map.</p>
     <p></p>
     <ul>
-        <li><a href="maps/"></a></li>
-        <li>Data Source: <a href=""></a></li>
+        <li>View this map here: <a target = '_blank' href="#">Power Plants Proportional Symbol Map</a></li>
+        <li>Data Source: <a target = '_blank' href="http://www.eia.gov/electricity/data/eia923/">The U.S. Energy Information Administration (EIA)</a></li>
     </ul>
 </section>
     
