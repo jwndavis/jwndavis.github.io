@@ -11,7 +11,7 @@
     
 <style>
     body {  
-    background: #f5f5f5;   
+    background: whitesmoke;   
     font-family: Imprima, sans-serif;
 }
 header {
@@ -19,7 +19,10 @@ header {
         min-width: 800px;
         margin: 0 auto;
         background: navy;
-        padding: 15px 0 20px;
+        background-image: url(images/Arch.PNG);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 75px 0px;
     }
 h1 {
     font-family: Dosis, sans-serif;
@@ -53,8 +56,11 @@ h3 {
         color: #375671;
         line-height: 1.6em;
     }
-    a, a:visited {   
-        color: #003d71;
+    a a:visited {   
+        color: navy;
+    }
+    a:hover {
+        color: coral;
     }
 .project {
     width: 80%;
@@ -75,23 +81,37 @@ h3 {
     margin-right: 20px;
     border: 2px solid #dddddd;
 }
-   
+footer {
+        width: 100%;
+        
+        min-width: 800px;
+        margin: 0 auto;
+        background: lightgrey;
+        background-image: url(images/NPS.PNG);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 20px 0px;
+    }
+footer-image {
+    width: 400px;
+    height: 200px;
+}
 </style>
 </head>
 
 <body>
 <header>
-    <h1>MAP672: Programming for Web Mapping</h1>
+    <h1>Programming for Web Mapping Portfolio</h1>
     <h2>Web Cartography at the University of Kentucky</h2>
 
-    <h3>Created by John Davis: Mapping Enthusiast and Sojourner of Continents<br>This portfolio demonstrates some mapping projects created using various tools, applications, and software programs.</h3>
+    <h3>Created by John Davis: Mapping Enthusiast and Sojourner of Continents<br>This portfolio demonstrates mapping projects created using various tools, applications,<br>and software programs used in the University of Kentucky's New Maps Plus Program.</h3>
 </header>
     
     <section class = "project">
     <a target = '_blank' href="maps/Breweries.pdf"><img src="images/Breweries.PNG" alt="Breweries in North America" class="project-image"/></a>
         <h3><a target = '_blank' href="maps/Breweries.pdf">A Distribution of North American Breweries</a></h3>
-    <p>This map was created using point data from <a href="http://www.poi-factory.com/">The POI Factory.</a> The hexagons displayed represent a spatial distribution of those locations known as hexbins, which group points into a grid of hexagons. These points are grouped in each hexagon by using point in polygon analysis within QGIS. The data is classified into equal groups to show the density of across the nation, where the lighter colored hexagons have a lower number of breweries within a 50km distance, and the darker hexagons a greater number. An inset map displays <a href="http://boulderbrewtours.com/">Boulder, CO Breweries</a> with stars showing their point distribution within the hexagons.</p>
-    <p></p>
+    <p>This map was created using point data from <a target = '_blank' href="http://www.poi-factory.com/">The POI Factory.</a> The hexagons displayed represent a spatial distribution of those locations known as hexbins, which group points into a grid of hexagons. These points are grouped in each hexagon by using point in polygon analysis within <a target = '_blank' href="https://qgis.org/en/site/about/index.html">QGIS.</a> The data is classified into equal groups to show the distribution and density across the nation, where the lighter colored hexagons have a less breweries within a 50km distance, while the darker hexagons have more breweries. An inset map displays a highly concentrated area of breweries around <a href="http://boulderbrewtours.com/">Boulder, CO</a> with stars showing their point distribution within the hexagons.</p>
+    
     <ul>
         <li>Take a closer look at Breweries across the nation by: <a target = '_blank' href="maps/Breweries.pdf">Hopping around with Malts</a></li>
         <li>Data Source: <a target = '_blank' href="http://www.poi-factory.com/node/21733">Brewery locations in North America including Canada, Mexico, and US Territories.</a></li>
@@ -102,7 +122,7 @@ h3 {
     <a target = '_blank' href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map"><img src="images/NationalParks.PNG" alt="US National Parks" class="project-image"/></a>
     <h3><a target = '_blank' href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map">National Parks by Area per Visitor in 2015</a></h3>
         <p>This map shows all 59 US National Park boundaries as proportional symbols based on how many acres in each park per visitor in 2015. I used <a href="https://carto.com/">Carto's</a> Bubble effect to create graduated symbols based on acres per person. If every visitor had their own private space in each park, how many acres would they enjoy all to themselves and which park would grant you the most and least amount of space? I calculated acres per park divided by number of visitors to create proportional symbols for the parks and when zoomed in, the park boundaries are shown with graduated colors to indicate the most amount of space in each park per person to enjoy the most acres of peace and quiet.</p>
-    <p></p>
+
     <ul>
         <li>Find your Park today by: <a href="https://jwndavis.carto.com/viz/0bbf7ea6-7c5b-11e6-a1cc-0e3ff518bd15/public_map">Avoiding the Crowds</a></li>
         <li>Data Source:<a href="https://irma.nps.gov/Portal/"> The Integrated Resource Management Applications (IRMA)</a></li>
@@ -112,15 +132,24 @@ h3 {
     <section class = "project">
     <a target = '_blank' target = '_blank' href="https://jwndavis.github.io/prop-symbol-power-plants/"><img src="images/PowerPlants3.PNG" alt="Power Plants Proportional Symbol Map" class="project-image"/></a>
     <h3><a target = '_blank' href="https://jwndavis.github.io/prop-symbol-power-plants/">Power Plants Proportional Symbol Map</a></h3>
-    <p>This interactive web map shows Geothermal, Wind, and Solar power plants across the US and was created using Javascript code utilizing the <a href="http://leafletjs.com/reference-1.0.2.html">Leaflet Javascript Library API</a> to customize our tools and data creating an informative and dynamic map. </p>
-    <p></p>
+    <p>This interactive web map shows Geothermal, Wind, and Solar power plants across the US and was created using Javascript code utilizing the <a target ='_blank' href="http://leafletjs.com/reference-1.0.2.html">Leaflet Javascript Library API</a> to customize Leaflet methods and events to produce a dynamic map. A custom function was created to calculate a radius of each circle marker based on the capacity of each power plant's fuel source, either Geothermal, Wind, or Solar. By clicking on the map, power plants wthin a 500km radius of your cursor are shown. Clicking on each facility's proportional symbol renders an informative window for each facility.</p>
+
     <ul>
-        <li>View this map here: <a target = '_blank' href="https://jwndavis.github.io/prop-symbol-power-plants/">Power Plants Proportional Symbol Map</a></li>
+        <li>Power up a more detailed version here: <a target = '_blank' href="https://jwndavis.github.io/prop-symbol-power-plants/">Power Plants Proportional Symbol Map</a></li>
         <li>Data Source: <a target = '_blank' href="http://www.eia.gov/electricity/data/eia923/">The U.S. Energy Information Administration (EIA)</a></li>
     </ul>
 </section>
     
-    
+<footer>
+<section class="project">
+<ul>
+    <li>See my projects on GitHub: <a target ='_blank'href="https://github.com/jwndavis?tab=repositories">Git Hub Portfolio</a></li>
+    <li>Follow me on twitter: <a target ='_blank' href="https://twitter.com/jwndavis">@jwndavis</a></li>
+    <li>All maps created for The University of Kentucky <a target ='_blank' href="http://newmapsplus.uky.edu/">New Maps Plus Program</a></li>
+    <li>Mapping Portfolio website produced by John Davis 12/16</li>
+</ul>
+</section>
+</footer>
     
     
     
